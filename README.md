@@ -23,7 +23,7 @@ Payoo is a modern, mobile-first financial web application redesigned with a prem
 - **DaisyUI**: Premium component library.
 - **FontAwesome**: High-quality vector icons.
 - **Vanilla JavaScript**: Lightweight and fast interaction logic.
-- **Google Fonts**: "Outfit" typography for a premium feel.
+- **Google Fonts**: "Poppins" typography for a premium, modern feel.
 
 ## 🛠️ Installation & Usage
 
