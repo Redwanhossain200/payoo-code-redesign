@@ -25,23 +25,23 @@ document
       // Add to history
       const container = document.getElementById("history-container");
       const div = document.createElement("div");
-      div.classList.add("flex", "justify-between", "items-center", "bg-base-100", "p-4", "rounded-2xl", "shadow-sm");
+      div.className = "bg-white p-5 rounded-[2rem] flex justify-between items-center shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100";
       div.innerHTML = `
         <div class="flex items-center gap-4">
-          <div class="bg-base-200 p-3 rounded-full">
-            <img src="./assets/opt-3.png" class="w-8" alt="" />
+          <div class="bg-green-100 p-3 rounded-2xl">
+            <img src="./assets/opt-3.png" class="w-8 h-8" alt="" />
           </div>
           <div>
-            <h3 class="font-bold text-lg">Transfer Money</h3>
-            <p class="text-neutral/50 text-sm">${new Date().toLocaleTimeString()} Today</p>
+            <h3 class="font-bold text-neutral text-sm">Sent to: ${accountNumber}</h3>
+            <p class="text-slate-400 text-[10px] font-medium mt-0.5">${new Date().toLocaleTimeString()} • Today</p>
           </div>
         </div>
-        <div>
-          <h3 class="font-bold text-error">-$${amount}</h3>
-           <i class="fa-solid fa-ellipsis-vertical text-neutral/30"></i>
+        <div class="text-right">
+          <h3 class="font-black text-red-500">-$${amount}</h3>
+          <p class="text-[9px] text-slate-300 font-bold uppercase tracking-tighter">Sent</p>
         </div>
       `;
-      container.appendChild(div);
+      container.prepend(div);
 
       alert("Transfer Successful");
     } else {
